@@ -37,6 +37,7 @@ self.bind("-", "split-window -v")
 
 # Resize to the smallest client actively viewing a window
 #setw -g aggressive-resize on
+self.aggressive_resize(True)
 
 # Don't wait so long for commands
 #set -s escape-time 0

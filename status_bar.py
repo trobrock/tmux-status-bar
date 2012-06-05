@@ -25,6 +25,10 @@ class TmuxConfig:
   def unbind(self, key):
     print "unbind %s" % key
 
+  def aggressive_resize(self, on=False):
+    toggle = 'on' if on else 'off'
+    self.__set_window("aggressive-resize %s" % toggle)
+
   def __set(self, command):
     print "set -g %s" % command
 
